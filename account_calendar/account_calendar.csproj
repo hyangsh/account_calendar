@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateSelectedEventArgs.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +58,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucDayrs1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDayrs1.Designer.cs">
+      <DependentUpon>ucDayrs1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcStatistics.Designer.cs">
+      <DependentUpon>UcStatistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +82,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ucDayrs1.resx">
+      <DependentUpon>ucDayrs1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcStatistics.resx">
+      <DependentUpon>UcStatistics.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
