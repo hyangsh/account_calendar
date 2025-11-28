@@ -47,6 +47,8 @@
             this.lbMonth1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -56,11 +58,9 @@
             this.txtContent = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblSelectedDate = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnCalendar = new System.Windows.Forms.Button();
             this.btnStats = new System.Windows.Forms.Button();
+            this.btnCalendar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -114,15 +114,13 @@
             this.splitContainer2.Panel2.Controls.Add(this.txtContent);
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer2.Panel2.Controls.Add(this.lblSelectedDate);
-            
             this.splitContainer2.Size = new System.Drawing.Size(1384, 899);
             this.splitContainer2.SplitterDistance = 1058;
             this.splitContainer2.TabIndex = 11;
-             
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::account_calendar.Properties.Resources.right;
             this.pictureBox3.Location = new System.Drawing.Point(309, 30);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(39, 38);
@@ -133,7 +131,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Image = global::account_calendar.Properties.Resources.free_icon_left_arrow_10238579;
             this.pictureBox4.Location = new System.Drawing.Point(264, 30);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(39, 38);
@@ -151,7 +149,6 @@
             this.lbMonth.Size = new System.Drawing.Size(197, 38);
             this.lbMonth.TabIndex = 30;
             this.lbMonth.Text = "MOINTH";
-            
             // 
             // label7
             // 
@@ -212,7 +209,6 @@
             this.label9.Size = new System.Drawing.Size(57, 17);
             this.label9.TabIndex = 24;
             this.label9.Text = "Monday";
-            
             // 
             // label10
             // 
@@ -292,6 +288,26 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Sunday";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(135, 627);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 18);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "금액";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(22, 627);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 18);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "사유";
+            // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -348,7 +364,6 @@
             this.rbExpense.TabStop = true;
             this.rbExpense.Text = "지출";
             this.rbExpense.UseVisualStyleBackColor = true;
-            
             // 
             // txtAmount
             // 
@@ -384,26 +399,6 @@
             this.lblSelectedDate.TabIndex = 0;
             this.lblSelectedDate.Text = "label3";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 627);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 18);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "사유";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(135, 627);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(34, 18);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "금액";
-            // 
             // panelMenu
             // 
             this.panelMenu.Controls.Add(this.btnStats);
@@ -413,17 +408,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(1384, 30);
             this.panelMenu.TabIndex = 33;
-            // 
-            // btnCalendar
-            // 
-            this.btnCalendar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalendar.Location = new System.Drawing.Point(1224, 7);
-            this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Size = new System.Drawing.Size(75, 23);
-            this.btnCalendar.TabIndex = 0;
-            this.btnCalendar.Text = "달력 보기";
-            this.btnCalendar.UseVisualStyleBackColor = true;
-            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // btnStats
             // 
@@ -435,6 +419,17 @@
             this.btnStats.Text = "통계 보기";
             this.btnStats.UseVisualStyleBackColor = true;
             this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
+            // 
+            // btnCalendar
+            // 
+            this.btnCalendar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalendar.Location = new System.Drawing.Point(1224, 7);
+            this.btnCalendar.Name = "btnCalendar";
+            this.btnCalendar.Size = new System.Drawing.Size(75, 23);
+            this.btnCalendar.TabIndex = 0;
+            this.btnCalendar.Text = "달력 보기";
+            this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // Form1
             // 
