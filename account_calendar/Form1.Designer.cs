@@ -114,8 +114,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.txtContent);
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer2.Panel2.Controls.Add(this.lblSelectedDate);
-            this.splitContainer2.Size = new System.Drawing.Size(1384, 899);
-            this.splitContainer2.SplitterDistance = 1058;
+            this.splitContainer2.Size = new System.Drawing.Size(1408, 899);
+            this.splitContainer2.SplitterDistance = 1076;
             this.splitContainer2.TabIndex = 11;
             // 
             // pictureBox3
@@ -406,7 +406,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(1384, 30);
+            this.panelMenu.Size = new System.Drawing.Size(1408, 30);
             this.panelMenu.TabIndex = 33;
             // 
             // btnStats
@@ -435,7 +435,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 899);
+            this.ClientSize = new System.Drawing.Size(1408, 899);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.splitContainer2);
             this.Name = "Form1";
