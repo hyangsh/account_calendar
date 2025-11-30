@@ -303,9 +303,20 @@ namespace account_calendar
                 statsView.BringToFront(); // 맨 앞으로 가져오기
             }
 
-            // 3. 통계 화면 보여주기
-            statsView.Visible = true;
-            panelMenu.BringToFront();
+            // 데이터를 통계 화면으로 넘겨주는 코드 
+            // accountData: 가계부 데이터 리스트
+            // _year, _month: 현재 보고 있는 연도와 월
+            statsView.LoadData(accountData, _year, _month);
+
+            // 4. 화면 보여주기 및 순서 정리
+            statsView.Visible = true;     // 보이게 설정
+            statsView.BringToFront();     // 맨 앞으로 가져오기 (중요)
+
+            // 만약 메뉴 패널(panelMenu)이 있다면 그게 버튼들을 가리지 않게 맨 위로 올림
+            if (panelMenu != null)
+            {
+                panelMenu.BringToFront();
+            }
         }
 
         private void btnCalendar_Click(object sender, EventArgs e)

@@ -165,13 +165,13 @@ namespace account_calendar
             }
         }
 
-        // 기존 로직 유지
+        // 클릭시 색 변하게 만드는 기능(일단 보류)
         private void panel1_Click(object sender, EventArgs e)
         {
             if (checkBox1.Checked == false)
             {
                 checkBox1.Checked = true;
-                this.BackColor = Color.FromArgb(255, 150, 79);
+                this.BackColor = Color.White;
             }
             else
             {
